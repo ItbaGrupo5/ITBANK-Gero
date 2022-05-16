@@ -1,0 +1,195 @@
+body {
+  min-height: 100vh;
+}
+body {
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans";
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+img {
+  max-width: 200px;
+  margin-top: 8px;
+  margin-left: -50px;
+}
+.menu-icon {
+  display: none;
+}
+.header {
+  background-color: rgb(228, 228, 228);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+}
+.left {
+  margin-left: -3px;
+  border-left: solid 1px;
+}
+.nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.nav ul li a:hover {
+  background-color: rgb(136, 136, 136);
+  transition: all 0.4s linear;
+}
+.main {
+  padding-top: 3.1rem;
+}
+.barra-inferior {
+  background: linear-gradient(
+    to right,
+    rgb(96, 185, 96),
+    rgb(102, 103, 189),
+    rgb(202, 79, 196),
+    rgb(238, 104, 104),
+    rgb(220, 233, 46)
+  );
+  height: 3px;
+  filter: blur(1px);
+}
+
+.footer {
+  background-color: #e4e4e4;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: inline-block;
+}
+
+footer p {
+  left: 30px;
+  float: left;
+  font-size: 12px;
+}
+
+.social-media {
+  position: relative;
+}
+
+.red {
+  max-width: 35px;
+  max-height: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .nav {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .img {
+    margin-left: 0px;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav ul.show {
+    display: block;
+  }
+  .nav ul li {
+    display: block;
+  }
+  .left {
+    border: none;
+  }
+  .bottom {
+    border-bottom: solid 1px;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+  }
+  .nav ul li a:hover {
+    background-color: rgb(136, 136, 136);
+    transition: all 0.4s linear;
+  }
+
+  .barra-inferior {
+    border-top: solid rgb(228, 228, 228) 15px;
+  }
+}
+/* header {
+  padding: 0.01mm;
+  background-color: rgb(228, 228, 228);
+  height: 80px;
+}
+.img {
+  max-width: 200px;
+}
+.barra-inferior {
+  background: linear-gradient(
+    to right,
+    rgb(96, 185, 96),
+    rgb(102, 103, 189),
+    rgb(202, 79, 196),
+    rgb(238, 104, 104),
+    rgb(220, 233, 46)
+  );
+  margin: 0;
+  height: 3px;
+}
+ul {
+  float: right;
+}
+li {
+  
+  float: left;
+  list-style: none;
+  display: inline;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+li a {
+  font-weight: bold;
+  padding-top: 38px;
+  padding-bottom: 31.5px;
+  padding: 38px 45px 31.5px 45px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+li a:hover {
+  background-color: rgb(110, 110, 110);
+  color: white;
+  transition: background-color 1s;
+} */
